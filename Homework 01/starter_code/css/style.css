@@ -1,0 +1,18 @@
+body {
+    color: #05080C;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #f6f6f6;
+    border-top: 5px solid #222222;
+    border-bottom: 5px solid #222222;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
