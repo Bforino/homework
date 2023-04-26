@@ -114,6 +114,18 @@ a {
   border: 3px solid #131e27;
 }
 
+/* FeatureBox */
+
+.relaxr-corestyles .featureBox {
+  padding: 20px;
+  max-width: 440px;
+}
+
+.relaxr-corestyles .featureBox h1 {
+font-size: 30px;
+text-transform: uppercase;
+}
+
 .featureBox {
   background: #f9e42e;
   max-width: 440px;
