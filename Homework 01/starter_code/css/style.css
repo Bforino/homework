@@ -5,14 +5,37 @@ body {
     background-color: #f6f6f6;
     border-top: 5px solid #222222;
     border-bottom: 5px solid #222222;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-img{
+img {
     float: right;
     margin-left: 30px;
     margin-bottom: 30px;
+}
+
+th {
+ background-color: #222222;
+ color: white;
+ padding: 10px;
+}
+
+td {
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    padding: 10px;
+}
+
+.reference_Link {
+    vertical-align: super;
+    font-size: 14px;
+}
+
+ol .a {
+    font-size: 50px;
 }
