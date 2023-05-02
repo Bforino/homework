@@ -13,17 +13,27 @@ p {
 
 header {
   background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   
 }
 
 header div {
   background-color: blue;
   color: #ffd900;
+
 }
 
 nav {
   color: white;
   background-color: blueviolet;
+}
+
+ul {
+  background-color: #ffd900;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 nav li {
@@ -33,7 +43,22 @@ nav li {
 aside {
   background-color: #adadad;
 }
-]
+
+.mainContent {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.feature {
+  background-color: azure;
+  grid-column: span 3;
+}
+
+.subFeature {
+ background-color: cornflowerblue;
+}
 
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
 .merriweather { font-family: 'Merriweather', serif; }
