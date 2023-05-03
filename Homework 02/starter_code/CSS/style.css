@@ -1,6 +1,12 @@
 /* ################################################## */
 /* ########### Global classes / overrides ########### */
 /* ################################################## */
+
+.merriweather { font-family: 'Merriweather', serif; }
+      .oswald { font-family: 'Oswald', sans-serif; }
+        .lato { font-family: 'Lato', sans-serif; }
+
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -13,51 +19,78 @@ p {
 
 header {
   background-color: black;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2ff00;
   
 }
 
-header div {
-  background-color: blue;
-  color: #ffd900;
-
-}
-
-nav {
-  color: white;
-  background-color: blueviolet;
+.logo{
+  color: #f2ff00;
+  width: fit-content;
+  margin-left: 20px;
 }
 
 ul {
-  background-color: #ffd900;
+  color: white;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+  margin-right: 20px;
 }
 
 nav li {
   list-style: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.navEmphasis {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
 }
 
 aside {
   background-color: #adadad;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 15px 0 15px 0;
 }
 
 .mainContent {
-  background-color: aquamarine;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .feature {
-  background-color: azure;
-  grid-column: span 3;
+  width: 300px;
+  height: fit-content;
+  margin: 25px 25px 25px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px rgba( 0,0,0,.75);
+}
+
+.bottomRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3;
 }
 
 .subFeature {
  background-color: cornflowerblue;
+ font-family: 'Lato', sans-serif;
+ padding: 20px 20px 20px 20px;
+ border: 1px solid;
+}
+
+.subFeature h2{
+  font-family: 'Merriweather', serif;
 }
 
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
