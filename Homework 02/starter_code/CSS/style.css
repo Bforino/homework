@@ -94,6 +94,21 @@ aside {
   font-family: 'Merriweather', serif;
 }
 
+
+
+.button {
+  background-color: #adadad;
+  color: black;
+  padding: 10px;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba( 0,0,0,.75);
+
+}
+
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
 .merriweather { font-family: 'Merriweather', serif; }
       .oswald { font-family: 'Oswald', sans-serif; }
