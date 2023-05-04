@@ -1,12 +1,6 @@
 /* ################################################## */
 /* ########### Global classes / overrides ########### */
 /* ################################################## */
-
-.merriweather { font-family: 'Merriweather', serif; }
-      .oswald { font-family: 'Oswald', sans-serif; }
-        .lato { font-family: 'Lato', sans-serif; }
-
-
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -14,99 +8,6 @@ h1, h2, h3, h4, h5, h6, p {
 p {
   font-size: 18px;
   line-height: 1.5;
-  padding: 15px 0;
-}
-
-header {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid #f2ff00;
-  
-}
-
-.logo{
-  color: #f2ff00;
-  width: fit-content;
-  margin-left: 20px;
-}
-
-ul {
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  margin-right: 20px;
-}
-
-nav li {
-  list-style: none;
-  font-family: 'Lato', sans-serif;
-}
-
-.navEmphasis {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-
-aside {
-  background-color: #adadad;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  padding: 15px 0 15px 0;
-}
-
-.mainContent {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 60%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.feature {
-  width: 300px;
-  height: fit-content;
-  margin: 25px 25px 25px 0;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 5px rgba( 0,0,0,.75);
-}
-
-.bottomRow {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 3;
-}
-
-.subFeature {
- background-color: rgb(255, 255, 255);
- font-family: 'Lato', sans-serif;
- margin: 10px 0 10px 0;
- padding: 20px 20px 20px 20px;
- border-right: 1px solid #adadad;
-}
-
-.subFeature h2{
-  font-family: 'Merriweather', serif;
-}
-
-
-
-.button {
-  background-color: #adadad;
-  color: black;
-  padding: 10px;
-  display: block;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 0 5px rgba( 0,0,0,.75);
-
 }
 
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
@@ -124,3 +25,185 @@ aside {
 /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
 
 
+.smHeader {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 4px solid #f2ff00;
+  padding: 3px 0px;
+}
+
+.smLogo {
+  margin-left: 20px;
+  font-family: 'Merriweather', serif;
+  color: #f2ff00;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.smMainNav {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+}
+
+.smMainNav ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 16px;
+}
+
+
+.smMainNav ul a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  margin: 0 8px;
+}
+
+.smMainNav ul a:hover{
+  color: #f2ff00;
+}
+
+.smMainNav .navItemEmphasis{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.smTagline{
+  background-color: #adadad;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.smTagline p{
+  font-size: 23px;
+  font-family:'Lato', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.strikeout{
+  text-decoration: line-through;
+}
+
+.textUnderline{
+  text-decoration: underline yellow;
+}
+
+.smHero{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.smHero div{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 330px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-right: 20px;
+  padding: 30px;
+  box-shadow: 0 0 5px rgba( 0,0,0,.75);
+}
+
+.smHero div h1{
+  font-family:'Lato', sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.smHero div p{
+  font-family:'Lato', sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.smHeroButton{
+  display: block;
+  width: 320px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: #f2ff00;
+  padding: 8px 0;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 5px rgba( 0,0,0,.30);
+  
+}
+
+.smHeroButton:hover{
+  background-color: #ffd900;
+  box-shadow: 0 0 10px rgba( 0,0,0,.40);
+}
+
+.smBottomRow{
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.smBottomRow div{
+  align-content: center;
+  border-right: 1px solid #adadad;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.smBottomRow div h1{
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.smBottomRow div p{
+  font-family:'Lato', sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.smButton{
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: #adadad;
+  padding: 8px 0;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba( 0,0,0,.75);
+}
+
+.smFooter{
+  display: block;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 0;
+  align-content: center;
+
+}
+
+.smFooter p{
+  font-family:'Lato', sans-serif;
+  font-size: 12px;
+  margin-left: 20px;
+}
