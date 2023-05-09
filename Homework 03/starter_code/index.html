@@ -3,20 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Homework 3 - Starter Code</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-## Reference content
+<!-- ## Reference content
 
 ### Font
 Lato 400 Regular
-https://fonts.google.com/?category=Sans+Serif&selection.family=Lato
+https://fonts.google.com/?category=Sans+Serif&selection.family=Lato -->
 
-### Navigation:
-Buy Rent Mortgage Local Scoop
-Saved Homes Saved Searches jsir
+<header class="truliaNav">
+  <div class="truliaLogo">
+    <img src="images/logo.svg" alt="TruliaLogo" />
+  </div>
+   <ul class="truliaNavLeft">
+        <li>Buy</li>
+        <li>Rent</li>
+        <li>Mortgage</li>
+        <li>Local Scoop</li>
+  </ul>
+ 
+  
+  <ul class="truliaNavRight">
+        <li>Saved Homes</li>
+        <li>Saved Searches</li>
+        <li>jsir</li>
+  </ul>
+
+</header>
+
+
+<section>
+  <h1>Homes for Sale & Real Estate in 20010</h1>
+  <p>79 homes available on Trulia</p>
+</section>
+
+<main class="trulia-grid">
+
+  <!-- Example grid-item -->
+  <article class="trulia-grid-item">
+    <div class="trulia-house-image trulia-house-image-1">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg" alt="Trulia House 1" />
+    </div>
+    <ul class="trulia-house-facts">
+        <li class="trulia-house-price"><h1>$475,000</h1></li>
+        <li class="trulia-house-stats">
+            <ul>
+                <li class="trulia-house-beds"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="trulia-article-icon"> 2bd </li>
+
+                <li class="trulia-house-baths"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="trulia-article-icon"> 2ba </li>
+
+                <li class="trulia-house-sqft">715 sqft</li>
+            </ul>
+        </li>
+        <li>
+            <p>3205 Georgia Ave NW #403 <br> Pleasant Plains, Washington, DC</p>
+        </li>
+    </ul>
+</article>
+
+</main>
+
+<section>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>></li>
+  </ul>
+  <p>1 - 30 of 79 Results</p>
+  <ul>
+    <li>United States</li>
+    <li>></li>
+    <li>District of Columbia</li>
+    <li>></li>
+    <li>Washington</li>
+    <li>></li>
+    <li>20010</li>
+  </ul>
+</section>
+
+<section>
+  <h1>20010 Real Estate Insights</h1>
+  <p>ZIP code 20010 is located in Washington, District of Columbia.</p>
+  
+  <p>The plethora of grocery stores in ZIP code 20010 makes it easy to stock up on specialty foods, like organic and gluten-free options, without having to leave the area. There is easy access to public transportation [https://www.trulia.com/real_estate/20010-Washington/], which is the preferred way to travel here due to its ease of use and abundant travel options. Bicycles are big sellers in ZIP code 20010; everyone seems to be riding these days, whether it's for the daily commute or a fun afternoon with the family.</p>
+  
+  <p>Many houses in ZIP code 20010 are historic with one-of-a-kind architecture, and it's clear to see why it's so important to maintain them and keep history living on. This year, the average listing price grew to $658,471  in this locale, a noticeable appreciation of 12.5 percent from $585,528 the year prior. During the same period, inventory is noticeably increasing in this locale year-over-year, with a 20 percent increase in for-sale listings last year alone. Enjoy a cozy night by the fire, as many residences here come equipped with authentic fireplaces. ZIP code 20010 has some great historic estates so if you move to one of these homes, you'll be inheriting a piece of history. If you enjoy a view and the ability to see far and wide, consider a penthouse in this place [https://www.trulia.com/for_sale/20010_zip/penthouse_keyword/] for an unparalleled experience.</p>
+
+</section>
+
+<footer>
+  <ul>
+    <li>About Trulia</li>
+    <li>About Zillow Group</li>
+    <li>Careers</li>
+    <li>Investor Relations</li>
+    <li>Advertising Terms</li>
+    <li>Privacy Terms of Use</li>
+    <li>Listings Quality Policy</li>
+    <li>Subscription Terms</li>
+    <li>Ad Choices</li>
+    <li>Help</li>
+  </ul>
+  <p>Copyright &copy; 2018 Trulia, LLC. All rights reserved. Equal Housing Opportunity.</p>
+</footer>
+
+<!---
 
 ### Houses:
 
@@ -101,6 +197,8 @@ $399,000
 3205 Georgia Ave NW, #505
 Pleasant Plains, Washington, DC
 
+</section>
+
 ### Images: 
 
 Logo:
@@ -143,7 +241,9 @@ Many houses in ZIP code 20010 are historic with one-of-a-kind architecture, and 
 HTML Skeleton to get you going:
  <main class="trulia-grid">
 
-    <!-- Example grid-item -->
+ -->
+
+    <!-- Example grid-item 
     <article class="trulia-grid-item">
       <div class="trulia-house-image trulia-house-image-12">
         <div class="new-box"></div>
@@ -166,6 +266,12 @@ HTML Skeleton to get you going:
   </article>
   
   </main>
+
+
+  ### Colors
+Green: #20c063 / RGBA(32,192,99,1)
+Gray: #e8e9ea  / RGBA (232,233,234,1)
+Dark Text: #3b4144 / RGBA (59,65,68,1)
 <!-- partial -->
   
 </body>
