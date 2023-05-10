@@ -3,40 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Homework 3 - Starter Code</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- ## Reference content
-
-### Font
-Lato 400 Regular
-https://fonts.google.com/?category=Sans+Serif&selection.family=Lato -->
 
 <header class="truliaNav">
-  <div class="truliaLogo">
-    <img src="images/logo.svg" alt="TruliaLogo" />
-  </div>
-   <ul class="truliaNavLeft">
-        <li>Buy</li>
-        <li>Rent</li>
-        <li>Mortgage</li>
-        <li>Local Scoop</li>
-  </ul>
+  <Nav class="truliaNavLeft">
+    <img class="truliaLogo" src="images/logo.svg" alt="TruliaLogo" />
+    <ul>
+        <li><a class="truliaNavItem" href="">Buy</a></li>
+        <li><a class="truliaNavItem" href="">Rent</a></li>
+        <li><a class="truliaNavItem" href="">Mortgage</a></li>
+        <li><a class="truliaNavItem" href="">Local Scoop</a></li>
+    </ul>
+  </Nav>
  
-  
-  <ul class="truliaNavRight">
-        <li>Saved Homes</li>
-        <li>Saved Searches</li>
-        <li>jsir</li>
+  <Nav class="truliaNavRight">
+  <ul>
+        <li><a class="truliaNavItem" href="">Saved Homes</a></li>
+        <li><a class="truliaNavItem" href="">Saved Searches</a></li>
+        <li><a class="truliaNavItem" href=""><span class="circle">J</span>jsir</a></li>
   </ul>
+</Nav>
 
 </header>
 
 
-<section>
+<section class="searchReturn">
   <h1>Homes for Sale & Real Estate in 20010</h1>
   <p>79 homes available on Trulia</p>
 </section>
@@ -45,8 +40,8 @@ https://fonts.google.com/?category=Sans+Serif&selection.family=Lato -->
 
   <!-- Example grid-item -->
   <article class="trulia-grid-item">
-    <div class="trulia-house-image trulia-house-image-1">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg" alt="Trulia House 1" />
+    <div class="trulia-house-image-1">
+      <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg" alt="Trulia House 1" /> -->
     </div>
     <ul class="trulia-house-facts">
         <li class="trulia-house-price"><h1>$475,000</h1></li>
@@ -112,7 +107,7 @@ https://fonts.google.com/?category=Sans+Serif&selection.family=Lato -->
   <p>Copyright &copy; 2018 Trulia, LLC. All rights reserved. Equal Housing Opportunity.</p>
 </footer>
 
-<!---
+<!--
 
 ### Houses:
 
@@ -241,9 +236,9 @@ Many houses in ZIP code 20010 are historic with one-of-a-kind architecture, and 
 HTML Skeleton to get you going:
  <main class="trulia-grid">
 
- -->
 
-    <!-- Example grid-item 
+
+    Example grid-item 
     <article class="trulia-grid-item">
       <div class="trulia-house-image trulia-house-image-12">
         <div class="new-box"></div>
@@ -272,7 +267,13 @@ HTML Skeleton to get you going:
 Green: #20c063 / RGBA(32,192,99,1)
 Gray: #e8e9ea  / RGBA (232,233,234,1)
 Dark Text: #3b4144 / RGBA (59,65,68,1)
-<!-- partial -->
+partial
+
+## Reference content
+
+### Font
+Lato 400 Regular
+https://fonts.google.com/?category=Sans+Serif&selection.family=Lato -->
   
 </body>
 </html>
