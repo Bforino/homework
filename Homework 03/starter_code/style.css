@@ -93,8 +93,7 @@
 .trulia-grid-item{
     display: flex;
     flex-direction: column;
-    height: 250px;
-    width: 325px;
+    max-width: 325px;
     border: 3px solid black;
     border-radius: 10px;
 }
@@ -102,8 +101,9 @@
 .trulia-house-image-1{
     background-color: #20c063;
     padding: 100px;
-   
-
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -112,15 +112,48 @@
 }
 
 .trulia-house-price{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 
 }
 
-.trulia-house-stats{
+.trulia-house-price h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    padding: 0px;
+}
+
+.arrow-up-icon{
+    height: 20px;
+    margin-left: 10px;
+}
+
+.trulia-house-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 0px;
 
 }
 
-.trulia-house-beds{
 
+.trulia-house-stats li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trulia-house-beds-icon{
+    margin: 10px;
+    height: 20px;
+}
+
+.trulia-house-baths-icon{
+    margin: 10px;
+    height: 20px;
 }
 
 .trulia-article-icon{
