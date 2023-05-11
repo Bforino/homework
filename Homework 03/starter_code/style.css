@@ -90,26 +90,87 @@
 /* ---FOR EXAMPLE GRID ITEM--- */
 
 
+.trulia-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px 15px;
+    background-color: #e8e9ea;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
 .trulia-grid-item{
     display: flex;
     flex-direction: column;
-    max-width: 325px;
-    border: 3px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
+    background-color: white;
 }
 
-.trulia-house-image-1{
-    background-color: #20c063;
-    padding: 100px;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+.trulia-house-image{
+    width: 100%;
+    height: 150px;
     background-position: center;
     background-size: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
+/*-----------IMAGES------------*/
+
+.trulia-house-image-1{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+}
+
+.trulia-house-image-2{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg);
+}
+
+.trulia-house-image-3{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg);
+}
+
+.trulia-house-image-4{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg);
+}
+
+.trulia-house-image-5{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg);
+}
+
+.trulia-house-image-6{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg);
+}
+
+.trulia-house-image-7{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg);
+}
+
+.trulia-house-image-8{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg);
+}
+
+.trulia-house-image-9{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg);
+}
+
+.trulia-house-image-10{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg);
+}
+
+.trulia-house-image-11{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg);
+}
+
+.trulia-house-image-12{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg);
+}
+
+/*-----------IMAGES END---------*/
 
 .trulia-house-facts{
     list-style: none;
     padding: 0px;
+    margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
 
 }
@@ -117,7 +178,7 @@
 .trulia-house-price{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: end;
 
 }
 
@@ -125,19 +186,23 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     padding: 0px;
+    margin: 6px 0 0 10px;
 }
 
 .arrow-up-icon{
-    height: 20px;
-    margin-left: 10px;
+    height: 16px;
+    margin-left: 2px;
+    margin-bottom: 2px;
 }
 
 .trulia-house-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
     padding: 0px;
+    margin-left: 10px;
+    margin-top: 5px;
 
 }
 
@@ -151,28 +216,139 @@
     font-size: 14px;
 }
 
+.trulia-house-address{
+    color: #787d81;
+    font-size: 14px;
+    margin: 5px 0 25px 10px;
+}
+
 .trulia-house-beds-icon{
-    margin: 10px;
-    height: 20px;
+    margin: 0 5px 0 0;
+    height: 15px;
 }
 
 .trulia-house-baths-icon{
-    margin: 10px;
-    height: 20px;
-}
-
-.trulia-article-icon{
-
-}
-
-.trulia-house-baths{
-
+    margin: 0 5px 0 5px;
+    height: 15px;
 }
 
 .trulia-house-sqft{
+    margin-left: 5px;
+}
+
+.new-box{
+    width: fit-content;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: #20c063b6;
+    color: white;
+    margin: 0px;
+    padding: 0 3px;
+    border-bottom-right-radius: 5px;
+
 
 }
 
-.trulia-grid-item p{
+.for-sale-by-owner{
+    width: fit-content;
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #3b414447;
+    color: white;
+    margin: 0px;
+    padding: 0 40px 1px 1px;
+    border-bottom-right-radius: 5px;
 
 }
+
+
+/*-----------LOWER SECTION------------*/
+
+.results-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.page-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.page-nav li{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+
+.page-nav-item{
+    color: #26ad5e;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.results-nav p{
+    align-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #686a6be6;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.real-estate-insights{
+    color: #222;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.real-estate-insights h1{
+    font-size: 22px;
+}
+
+.trulia-footer{
+    background-color: #474E52;
+    padding-top: 15px;
+    margin-top: 50px;
+
+}
+
+.trulia-footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px 10px;
+}
+
+.footer-nav-item{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.trulia-footer p{
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#a9acaee6;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+
