@@ -29,3 +29,30 @@ console.log("the glorious dancing cow is a " + typeof programmingIsCool);
 const clearancePrice = 1.99;
 const lifeTheUniverseAndEverything = 42;
 const theCruelestMonth = "April";
+
+let greeting = "good morning";
+let theName = "brie";
+
+console.log (`${message} ${theName}!`); 
+
+theName = "Charlee";
+console.log (`${message} ${theName}!`); 
+theName = "Rob";
+console.log (`${message} ${theName}!`); 
+
+number = 5;
+console.log(`the number is ${number}`);
+number = number + 5;
+console.log(`the number is ${number}`);
+number = number * 10;
+console.log(`the number is ${number}`);
+number = number / 2;
+
+console.log (`${theName} is ${number} years old`);
+console.log(theName + " is " + number + " years old");
+
+myDog = "Ranger";
+myHubs = "Rob";
+myDaughter = "Charlee";
+
+console.log("I love " + myDog + " and " + myHubs);
