@@ -188,6 +188,34 @@ body {
 
 /* Create a media query to target print only */
 
+@media print {
+
+    .pcl_contentOuter{
+        width: 8in;
+    }
+    
+    .pcl_topnav {
+        display: none;
+    }
+
+    .pcl_navBlock {
+        display: none;
+    }
+
+    .pcl_productbar {
+        display: none;
+    }
+
+    .pcl_invoice_total {
+        border-top: 2px solid black;
+    }
+
+    .pcl_invoice_items td {
+        border-top: 1px solid grey;
+
+    }
+}
+
     /* Hide Navigation */
 
 

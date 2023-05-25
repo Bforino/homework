@@ -30,16 +30,41 @@ img {
   width: 300px;
 }
 
+
 .subtle-button {
   background-color: goldenrod;
+  transition: background-color 0.5s linear;
+}
+
+.subtle-button:hover {
+  background-color: red;
 }
 
 .sideways-gradient {
   height: 200px;
   margin: 10px;
+  background: linear-gradient(
+    to left,
+    pink, purple
+  );
 }
 
+.mcconaughey {
+  animation: spinnerme 4s ease-in-out infinite;
+}
 
 .mcconaughey-caption {
   text-align: center;
+}
+
+@keyframes spinnerme{
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
