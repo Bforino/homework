@@ -16,7 +16,7 @@ async function handleWeatherRequest(e) {
 
   // Write a function to convert the temps from the default units (Kelvin) to a more readable F or C
   const readableTemp = convertTemp(data.main.temp);
-  const readableFeelsLikeTemp = convertTemp(data.main.feels_like);;
+  const readableFeelsLikeTemp = convertTemp(data.main.feels_like);
   const readableMaxTemp = convertTemp(data.main.temp_max);
   const readableMinTemp = convertTemp(data.main.temp_min);
 
