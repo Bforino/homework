@@ -82,6 +82,7 @@ retch(myRequest)
 
 
             // Set the Price
+            newElement.querySelector()
 
 
 

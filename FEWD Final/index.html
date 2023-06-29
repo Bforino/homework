@@ -1,0 +1,350 @@
+<!DOCTYPE html<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Brie's Bouquet Planner</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/msj6dah.css">
+    <link rel="stylesheet" href="https://use.typekit.net/msj6dah.css">
+    <link rel="stylesheet" href="https://use.typekit.net/msj6dah.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+
+
+<body>
+<section class="header">
+    <div>
+        <h1>Brie's Bouquet Planner</h1>
+    </div>
+</section>
+
+<section id="userInput" class="input">
+
+    <p>Select the Flowers you Would Like to Include in your Bouquet:</p>
+
+    <section class="select">
+
+        <div id="cosmosSelect">
+            <div class="imageHolder cosmoImage"></div>
+            <p class="flowerName">Cosmos Versailles Mix</p>
+        </div>
+
+        <div id="pinkBeautySelect">
+            <div class="imageHolder pinkBeautyImage"></div>
+            <p class="flowerName">Pink Beauty</p>
+        </div>
+
+        <div id="autumnBeautySelect">
+            <div class="imageHolder autumnBeautyImage"></div>
+            <p class="flowerName">Autumn Beauty</p>
+        </div>
+
+        <div id="zinniaOklahomaMixSelect">
+            <div class="imageHolder zinniaImage"></div>
+            <p class="flowerName">Zinnia Oklahoma Mix</p>
+        </div>
+
+        <div id="summerProvenceSelect">
+            <div class="imageHolder summerProvenceImage"></div>
+            <p class="flowerName">Summer Provence</p>
+        </div>
+
+        <div id="persianCressSelect">
+            <div class="imageHolder persianCressImage"></div>
+            <p class="flowerName">Persian Cress</p>
+        </div>
+
+        <div id="whiteNiteSelect">
+            <div class="imageHolder whiteNiteImage"></div>
+            <p class="flowerName">White Nite</p>
+        </div>
+
+        <div id="audrayPinkSelect">
+            <div class="imageHolder audrayPinkImage"></div>
+            <p class="flowerName">Audray Pink</p>
+        </div>
+
+    </section>
+
+    <section class="dateInput">
+        <form>
+            <label for="harvestDate">Harvest Date:</label>
+            <input type="date" id="harvestDate" name="harvestDate" min="2023-07-04">
+          </form>
+    </section>
+
+    <div id="submitButton" class="button"><a href="GET PLAN">Get Plan</a></div>
+
+</section>
+
+
+<section class="output">
+
+    <div id="outputHeader" class="hide">
+        <div class="bouqetPlanButtons"><button class="backButton" onClick="window.location.reload();">Create Another Bouquet</button>
+        </div>
+        <h1>Your Bouquet Plan</h1>
+        <p></p>
+    </div>
+
+
+    <section class="results">
+        
+<!-- Cosmos-->
+        
+        <div class="flowerCard hide" id="cosmosVersaillesMix">
+            <div class="cardImage cosmoImage"></div>
+            <div class="flowerInformation">
+                <div class="flowerHeader">
+                    <h1>Cosmos Versailles Mix</h1>
+                    <div class="plantDate">
+                        <img class=calendarIcon src="Images/calendarIcon.png">
+                        <p id="cosmoSeedDate"></p>
+                    </div>
+                </div>
+                <div class="flowerStats">
+                    <div class="plantSpacing">
+                        <h2>Plant Spacing</h2>
+                        <p>9-12"</p>
+                    </div>
+                    <div class="Sowing">
+                        <h2>Sowing</h2>
+                        <p>Direct Seed</p>
+                        <p>Cover lightly</p>
+                    </div>
+                    <div class="SoilRequirements">
+                        <h2>Soil Requirements</h2>
+                        <p>Any Soil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--Pink Beauty-->
+
+         <div class="flowerCard hide" id="pinkBeauty">
+            <div class="cardImage pinkBeautyImage"></div>
+            <div class="flowerInformation">
+                <div class="flowerHeader">
+                    <h1>Pink Beauty</h1>
+                    <div class="plantDate">
+                        <img class=calendarIcon src="Images/calendarIcon.png">
+                        <p id="pinkBeautySeedDate"></p>
+                    </div>
+                </div>
+                <div class="flowerStats">
+                    <div class="plantSpacing">
+                        <h2>Plant Spacing</h2>
+                        <p>2-9"</p>
+                    </div>
+                    <div class="Sowing">
+                        <h2>Sowing</h2>
+                        <p>Direct seed</p>
+                        <p>1/8" deep</p>
+                    </div>
+                    <div class="SoilRequirements">
+                        <h2>Soil Requirements</h2>
+                        <p>Average, well drained soil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--Autumn Beauty-->
+
+         <div class="flowerCard hide" id="autumnBeauty">
+            <div class="cardImage autumnBeautyImage"></div>
+            <div class="flowerInformation">
+                <div class="flowerHeader">
+                    <h1>Autumn Beauty Sunflower</h1>
+                    <div class="plantDate">
+                        <img class=calendarIcon src="Images/calendarIcon.png">
+                        <p id="autumnBeautySeedDate"></p>
+                    </div>
+                </div>
+                <div class="flowerStats">
+                    <div class="plantSpacing">
+                        <h2>Plant Spacing</h2>
+                        <p>4-6"</p>
+                    </div>
+                    <div class="Sowing">
+                        <h2>Sowing</h2>
+                        <p>Direct seed</p>
+                        <p>1/2" deep</p>
+                    </div>
+                    <div class="SoilRequirements">
+                        <h2>Soil Requirements</h2>
+                        <p>Light, well drained soil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<!--Summer Provence-->
+
+    <div class="flowerCard hide" id="summerProvence">
+        <div class="cardImage summerProvenceImage"></div>
+        <div class="flowerInformation">
+            <div class="flowerHeader">
+                <h1>Summer Provence Sunflower</h1>
+                <div class="plantDate">
+                    <img class=calendarIcon src="Images/calendarIcon.png">
+                    <p id="summerProvenceSeedDate"></p>
+                </div>
+            </div>
+            <div class="flowerStats">
+                <div class="plantSpacing">
+                    <h2>Plant Spacing</h2>
+                    <p>4-6"</p>
+                </div>
+                <div class="Sowing">
+                    <h2>Sowing</h2>
+                    <p>Direct seed</p>
+                    <p>1/2" deep</p>
+                </div>
+                <div class="SoilRequirements">
+                    <h2>Soil Requirements</h2>
+                    <p>Light, well drained soil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!--Persian Cress-->
+
+    <div class="flowerCard hide" id="persianCress">
+        <!--<img class="flowerImage" src="Images/persianCress.jpeg"
+        alt=“Persian Cress”>-->
+        <div class="cardImage persianCressImage"></div>
+        <div class="flowerInformation">
+            <div class="flowerHeader">
+                <h1>Persian Cress</h1>
+                <div class="plantDate">
+                    <img class=calendarIcon src="Images/calendarIcon.png">
+                    <p id="persianCressSeedDate"></p>
+                </div>
+            </div>
+            <div class="flowerStats">
+                <div class="plantSpacing">
+                    <h2>Plant Spacing</h2>
+                    <p>2-6"</p>
+                </div>
+                <div class="Sowing">
+                    <h2>Sowing</h2>
+                    <p>Direct seed</p>
+                    <p>1/4" deep</p>
+                </div>
+                <div class="SoilRequirements">
+                    <h2>Soil Requirements</h2>
+                    <p>Average, well drained soil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!--White Nite-->
+
+        <div class="flowerCard hide" id="whiteNite">
+            <div class="cardImage whiteNiteImage"></div>
+            <div class="flowerInformation">
+                <div class="flowerHeader">
+                    <h1>White Nite Sunflower</h1>
+                    <div class="plantDate">
+                        <img class=calendarIcon src="Images/calendarIcon.png">
+                        <p id="whiteNiteSeedDate"></p>
+                    </div>
+                </div>
+                <div class="flowerStats">
+                    <div class="plantSpacing">
+                        <h2>Plant Spacing</h2>
+                        <p>4-6"</p>
+                    </div>
+                    <div class="Sowing">
+                        <h2>Sowing</h2>
+                        <p>Direct seed</p>
+                        <p>1/2" deep</p>
+                    </div>
+                    <div class="SoilRequirements">
+                        <h2>Soil Requirements</h2>
+                        <p>Light, well drained soil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+ <!--Zinnia-->
+
+        <div class="flowerCard hide" id="zinnia">
+            <div class="cardImage zinniaImage"></div>
+            <div class="flowerInformation">
+                <div class="flowerHeader">
+                    <h1>Zinnia</h1>
+                    <div class="plantDate">
+                        <img class=calendarIcon src="Images/calendarIcon.png">
+                        <p id="zinniaSeedDate">Set New Text</p>
+                    </div>
+                </div>
+                <div class="flowerStats">
+                    <div class="plantSpacing">
+                        <h2>Plant Spacing</h2>
+                        <p>9-12"</p>
+                    </div>
+                    <div class="Sowing">
+                        <h2>Sowing</h2>
+                        <p>Direct seed</p>
+                        <p>1/4" deep</p>
+                    </div>
+                    <div class="SoilRequirements">
+                        <h2>Soil Requirements</h2>
+                        <p>Soil rich in organic matter. pH: 6.3-6.8 preferred</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--Audray Pink-->
+
+        <div class="flowerCard hide" id="audrayPink">
+            <div class="cardImage audrayPinkImage"></div>
+            <div class="flowerInformation">
+                <div class="flowerHeader">
+                    <h1>Flower Name</h1>
+                    <div class="plantDate">
+                        <img class=calendarIcon src="Images/calendarIcon.png">
+                        <p id="audrayPinkSeedDate"></p>
+                    </div>
+                </div>
+                <div class="flowerStats">
+                    <div class="plantSpacing">
+                        <h2>Plant Spacing</h2>
+                        <p>Insert Plant Spacing Here</p>
+                    </div>
+                    <div class="Sowing">
+                        <h2>Sowing</h2>
+                        <p>Sowing Metric Here</p>
+                    </div>
+                    <div class="SoilRequirements">
+                        <h2>Soil Requirements</h2>
+                        <p>Any Soil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+</section>
+
+<script src="bouquetPlanner.js" async defer></script>
+
+</body>
+
+
+

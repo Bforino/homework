@@ -1,0 +1,466 @@
+
+
+
+/*-------IMAGES--------*/
+
+
+.cosmoImage{
+    background-image: url(https://www.johnnyseeds.com/dw/image/v2/BJGJ_PRD/on/demandware.static/-/Sites-jss-master/default/dwdc186a64/images/products/flowers/01095_01_versaillesmix.jpg?sw=800&sh=800);
+ }
+
+ .pinkBeautyImage{
+    background-image: url(https://www.johnnyseeds.com/dw/image/v2/BJGJ_PRD/on/demandware.static/-/Sites-jss-master/default/dw9642ee52/images/products/flowers/3703_01_pinkbeauty.jpg?sw=800&sh=800);
+ }
+
+ .autumnBeautyImage{
+    background-image: url(https://www.johnnyseeds.com/dw/image/v2/BJGJ_PRD/on/demandware.static/-/Sites-jss-master/default/dw295f9728/images/products/flowers/01305_01_autumnbeauty.jpg?sw=800&sh=800);
+}
+
+.zinniaImage{
+    background-image: url(https://www.johnnyseeds.com/dw/image/v2/BJGJ_PRD/on/demandware.static/-/Sites-jss-master/default/dw38a48a0b/images/products/flowers/01346_01_benarys_giant_mix.jpg?sw=800&cx=368&cy=13&cw=1072&ch=1072);
+}
+
+.summerProvenceImage{
+    background-image: url(https://www.johnnyseeds.com/dw/image/v2/BJGJ_PRD/on/demandware.static/-/Sites-jss-master/default/dw8299bd49/images/products/flowers/04410_01_summerprovence.jpg?sw=800&sh=800);
+}
+
+.persianCressImage{
+    background-image: url(https://www.johnnyseeds.com/dw/image/v2/BJGJ_PRD/on/demandware.static/-/Sites-jss-master/default/dw4c6c6fdb/images/products/flowers/03399g_01_persian_cress.jpg?sw=800&sh=800);
+}
+
+.whiteNiteImage{
+    background-image: url(https://www.johnnyseeds.com/dw/image/v2/BJGJ_PRD/on/demandware.static/-/Sites-jss-master/default/dw6aaf3457/images/products/flowers/03305_01_white_nite.jpg?sw=800&sh=800);
+}
+
+.audrayPinkImage{
+    background-image: url(https://www.johnnyseeds.com/dw/image/v2/BJGJ_PRD/on/demandware.static/-/Sites-jss-master/default/dwc6e006ab/images/products/flowers/4774_01_audraypink.jpg?sw=800&sh=800);
+}
+
+
+
+/* -------HEADER---------*/
+
+.header{
+    background-color: #24584E;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.header h1{
+    font-family: "filosofia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #E2EDD9;
+}
+
+/* -------INPUT---------*/
+
+
+#userInput > p{
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 50px;
+    color: #24584E;
+    
+}
+
+.dateInput{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #24584E;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+input[type=date]{
+    background-color: #F8F3EF;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #24584E;
+    color: #24584E;
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.select{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .select {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    
+  }
+
+@media screen and (max-width: 480px) {
+    .select {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+  }
+
+  #outputheader div{
+    margin:auto
+  }
+
+  .backButton{
+    display: block;
+    background-color: #24584E;
+    color: #E2EDD9;
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.button{
+    background-color: #24584E;
+    color: #E2EDD9;
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button a{
+    color: #E2EDD9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+
+}
+
+
+ .imageHolder{
+    background-size: cover;
+    height: 180px;
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px 10px 0px 0px;
+    filter: opacity(80%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .imageHolder {
+        background-size: cover;
+        margin: 20px 90px 0px 90px;
+        cursor: pointer;
+        
+    }
+  }
+
+
+
+ .imageHolderSelected{
+    background-size: cover;
+    height: 200px;
+    margin: 0;
+    border-top: 2px solid #24584E;
+    border-left: 2px solid #24584E;
+    border-right: 2px solid #24584E;
+    border-radius: 10px 10px 0px 0px;
+    filter: opacity(100%);
+    cursor: pointer;
+}
+
+.flowerName{
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    background-color: #F8F3EF;
+    color: #24584E;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0 10px 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .flowerName {
+        background-size: cover;
+        margin: 0px 90px 0px 90px;
+        cursor: pointer;
+        
+    }
+  }
+
+.flowerNameSelected{
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    background-color: #24584E;
+    color: #E2EDD9;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 2px solid #24584E;
+    border-right: 2px solid #24584E;
+    border-bottom: 2px solid #24584E;
+    cursor: pointer;
+}
+
+
+/* -------RESULTS--------*/
+
+
+#outputHeader h1{
+    font-family: "filosofia", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #24584E;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#outputHeader p{
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #24584E;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.flowerInformation{
+    background-color: #ffffff;
+    border: 1px solid #24584E;
+    border-radius: 0px 10px 10px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .flowerInformation{
+        border-radius: 0px 0px 10px 10px;
+        border-bottom: 2px solid #24584E;
+        border-left: 2px solid #24584E;
+        border-right: 2px solid #24584E;
+        
+    }
+  }
+
+
+.results{
+    background-color: #E2EDD9;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 480px) {
+    .results {
+        gap: 20px;
+        
+    }
+  }
+
+.results > div{
+    margin-top:30px;
+}
+
+.flowerCard{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 850px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .flowerCard {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        max-width: 300px;
+        height: 450px;
+    }
+  }
+
+
+.flowerCardhide{
+    display: none;
+}
+
+
+
+.cardImage{
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .cardImage {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+        border-top: 2px solid #24584E;
+        border-left: 2px solid #24584E;
+        border-right: 2px solid #24584E;
+        border-bottom: none;
+
+    }
+  }
+
+.flowerHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .flowerHeader {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+
+    }
+  }
+
+
+.flowerHeader h1{
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 8px;
+    margin: 0px;
+    color: #24584E;
+}
+
+@media screen and (max-width: 480px) {
+    .flowerHeader h1 {
+        margin-bottom: 10px;
+
+    }
+  }
+
+.calendarIcon{
+    margin-right: 16px;
+    height: 18px;
+}
+
+.plantDate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.plantDate p{
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+}
+
+.flowerStats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-right:20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .flowerStats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0;
+
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .soilRequirements {
+       margin-bottom: 20px;
+
+    }
+  }
+    
+
+.flowerStats h2{
+    font-family: "questa-sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #E2EDD9;
+    color: #24584E;
+}
+
+.flowerStats p{
+    font-family: "questa-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+    color: #24584E;
+    
+}
+
+.hide{
+    display: none;
+}
